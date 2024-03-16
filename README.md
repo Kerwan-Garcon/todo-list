@@ -124,9 +124,7 @@ Now, let's create a validation schema for our todo items. Create a file named `t
 import { z } from "zod";
 
 export const todoSchema = z.object({
-  id: z.number(),
   text: z.string().min(1),
-  completed: z.boolean(),
 });
 ```
 
